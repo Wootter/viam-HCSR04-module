@@ -39,7 +39,7 @@ class hcsr04(Sensor, Reconfigurable):
             raise Exception("'trig_pin' must be defined in the configuration.")
         if "echo_pin" not in config.attributes.fields:
             raise Exception("'echo_pin' must be defined in the configuration.")
-        return
+        return ([], [])
 
     def reconfigure(self, config: ComponentConfig, dependencies: Mapping[ResourceName, ResourceBase]):
         # Get the pins from the configuration

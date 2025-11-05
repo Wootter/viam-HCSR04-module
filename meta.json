@@ -1,0 +1,19 @@
+{
+  "$schema": "https://dl.viam.dev/module.schema.json",
+  "module_id": "wootter:hcsr04",
+  "visibility": "public",
+  "url": "https://github.com/Wootter/viam-hcsr04-module",
+  "description": "A Viam module for the HC-SR04 ultrasonic distance sensor on Raspberry Pi",
+  "models": [
+    {
+      "api": "rdk:component:sensor",
+      "model": "wootter:sensor:hcsr04"
+    }
+  ],
+  "entrypoint": "run.sh",
+  "build": {
+    "build": "tar -czf module.tar.gz run.sh requirements.txt src",
+    "path": "module.tar.gz",
+    "arch": ["linux/arm64", "linux/amd64"]
+  }
+}

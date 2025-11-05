@@ -1,0 +1,13 @@
+.installed
+viam-env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+module.tar.gz
